@@ -2,7 +2,7 @@
 
 1、用户注册
 >>1.1用户注册分为手机注册和邮箱注册<br>
-![](https://upload-images.jianshu.io/upload_images/20437664-55aa7a7122ad6e7a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![ss](https://github.com/yimi-zyx/Bookstore/blob/master/src/main/resources/static/image/defaultheadportrait.png)
 1.2用户名、手机号、邮箱号必须是唯一的<br>
 1.3验证用户输入的信息后，当输入框失去焦点将进行输入信息是否符合要求检测<br>
 1.4用户输入完信息后点击注册，先进行前端判断字符串是否符合要求<br>
