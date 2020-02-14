@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/favorite.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/head2.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <script src="/Js/jquery-3.4.0.js"></script>
+    <title>收藏夹</title>
+
+</head>
+<body>
+    <div th:replace="head2::.header2"></div>
+    <div class="faovrite">
+        <div class="faovrite-title">我的收藏夹>></div>
+        <div class="faovrite-books clearfix">
+            <div class="faovrite-booksimg"><img src="image/1201638865_0_3_800x800.jpg"></div>
+            <div class="faovrite-bookinfo">
+                <div class="faovrite-bookname">橘子不是唯一的水果</div>
+                <div class="faovrite-bookauthor">XXXXXXX</div>
+                <div class="faovrite-bookprice">
+                    <span class="bookprice-left">￥20.20</span>
+                    <span class="bookprice-right">￥29.70</span>
+                </div>
+            </div>
+            <div class="faovrite-bookbrief">
+                <div class="v-center"> HTML table代码常规的大家都会写,无非是th、tr、td的用法,新手站长网来说说
+                    table代码的升级版,table代码跨行跨列,一行对多列或者一列对多行的用法:</div>               </div>
+        </div>
+    </div>
+    <div th:replace="footer::.footer"></div>
+</body>
+</html>

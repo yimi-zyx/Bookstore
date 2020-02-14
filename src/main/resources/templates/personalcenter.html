@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/personalcenter.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/head2.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <script src="/Js/jquery-3.4.0.js"></script>
+    <title>个人中心</title>
+</head>
+<body>
+    <div th:replace="head2::.header2"></div>
+    <div class="personalcenter clearfix">
+        <div class="personalcenter-left">
+            <div class="personalinfo">
+                <div class="personalinfo-img">
+                    <img src="image/defaultheadportrait.png">
+                </div>
+                <div class="personalinfo-text">
+                    <div class="personalinfo-name">123test</div>
+                    <div class="personalinfo-setting">
+                        <span class="glyphicon glyphicon-edit personalcenter-icon"></span>
+                        <a>修改头像</a>
+                    </div>
+                </div>
+            </div>
+            <div class="fastchannel">快速通道</div>
+            <div class="fastchannel-line clearfix">
+                <span class="glyphicon glyphicon-user fastchannel-icon"></span>
+                <span>编辑昵称</span>
+            </div>
+            <div class="fastchannel-line clearfix">
+                <!--<span class="glyphicon glyphicon-phone fastchannel-icon"></span>-->
+                <span class="glyphicon glyphicon-phone fastchannel-icon"></span>
+                <span>手机：177******43</span>
+                <a>修改</a>
+            </div>
+            <div class="fastchannel-line clearfix">
+                <span class="glyphicon glyphicon-envelope fastchannel-icon"></span>
+                <span>邮箱</span>
+                <a>添加</a>
+            </div>
+            <div class="fastchannel-line clearfix">
+                <span class="glyphicon glyphicon-lock fastchannel-icon"></span>
+                <span>修改密码</span>
+            </div>
+            <div class="fastchannel-line clearfix">
+                <span class="glyphicon glyphicon-off fastchannel-icon"></span>
+                <span>账号注销</span>
+            </div>
+        </div>
+        <div class="personalcenter-right">
+            <div class="personalcenter-top">
+                <ul class="personalcenter-nav clearfix">
+                    <li>
+                       <a href="/favorite">
+                           <div class="nav-block">
+                            <div class="numbers">7</div>
+                            <div class="description"><span class="glyphicon glyphicon-folder-open"></span> 收藏夹</div>
+                            </div>
+                       </a>
+                    </li>
+                    <li>
+                        <div class="nav-block">
+                            <div class="numbers">7</div>
+                            <div class="description"><img src="image/integrals.png">积分</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-block">
+                            <div class="numbers">7</div>
+                            <div class="description"><img src="image/goldenicon.jpg">书币</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-block">
+                            <div class="numbers">7</div>
+                            <div class="description"><img src="image/footprint.png">足迹</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="personalcenter-myorder">
+                <div class="myorder-title">
+                    <span>我的订单</span>
+                    <a>查看全部订单>></a>
+                </div>
+                <div class="myorder-content">
+                    <div class="orderdetail">
+                        <div class="order-nav">
+                            <ul class="order-navigations clearfix">
+                                <li>
+                                    <div class="order-block">
+                                        <img src="image/daifukuan.jpg">
+                                        <span>1</span>
+                                        <div class="block-text">待付款</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="order-block">
+                                        <img src="image/daifahuo.jpg">
+                                        <span>1</span>
+                                        <div class="block-text">待发货</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="order-block">
+                                        <img src="image/daishouhuo.jpg">
+                                        <span>1</span>
+                                        <div class="block-text">待收货</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="order-block">
+                                        <img src="image/daipingjia.jpg">
+                                        <span>1</span>
+                                        <div class="block-text">待评价</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="order-block">
+                                        <img src="image/tuikuanshouhou.jpg">
+                                        <span>1</span>
+                                        <div class="block-text">退款/售后</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="recentorder">最近订单</div>
+                        <table border="1">
+                            <tr>
+                                <th>订单编号</th>
+                                <th>收货人</th>
+                                <th>付款方式</th>
+                                <th>商品件数</th>
+                                <th>订单金额</th>
+                                <th>订单状态</th>
+                                <th>下单时间</th>
+                                <th>操作</th>
+                            </tr>
+                            <tr>
+                                <td><a href="/orderdetail">19071414805042</a></td>
+                                <td>zh</td>
+                                <td>网上支付</td>
+                                <td>1件</td>
+                                <td>￥17.20</td>
+                                <td>已取消</td>
+                                <td>2019-07-14 14:43:55</td>
+                                <td><a>删除订单</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div th:replace="footer::.footer"></div>
+    <!--<script src="/Js/personalcenter.js"></script>-->
+</body>
+</html>

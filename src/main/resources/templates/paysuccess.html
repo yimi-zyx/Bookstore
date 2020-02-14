@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>支付成功</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/paysuccess.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/head.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <script src="js/jquery-3.4.0.js"></script>
+</head>
+<body>
+<!--头部-->
+    <div th:replace="head::.top"></div>
+    <div class="top-footer"></div>
+    <div class="paysuccess">
+        <div class="paysuccess-content">
+            <div class="paysuccess-text">
+                <div class="paysuccess-title"><img src="image/paysuccess.png">你已成功付款<span class="color-origin">17.20</span>元!</div>
+                <div class="paysuccess-linetext">订单号：<span>19071414805042</span></div>
+                <div class="paysuccess-linetext"><a href="/orderdetail">查看订单详情</a></div>
+                <div class="paysuccess-linetext">您可能还需要：<a>查看书币余额</a>&emsp;|&emsp;<a>消&ensp;费&ensp;记&ensp;录</a>&emsp;|&emsp;<a>书&ensp;币&ensp;充&ensp;值</a></div>
+                <div class="paysuccess-linetext">不做任何操作,5秒后自动跳转到首页</div>
+                <div class="circleProgress_wrapper">
+                    <div class="wrapper left">
+                        <div class="circleProgress leftcircle"></div>
+                    </div>
+                    <div class="wrapper right">
+                        <div class="circleProgress rightcircle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--底部-->
+    <div th:replace="footer::.footer"></div>
+<script src="/Js/head.js"></script>
+<script>
+    setTimeout(function () {window.location.href="/"},4700);
+</script>
+</body>
+</html>

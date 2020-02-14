@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE generatorConfiguration  
+  PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"  
+  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+	<!-- 引入外部配置文件 -->
+	<properties resource="application.properties" />
+	<classPathEntry
+		location="F:\Project\mysql-connector-java-5.1.45-bin.jar" />
+	<context id="context1">
+		<jdbcConnection driverClass="${spring.datasource.driverClassName}"
+			connectionURL="${spring.datasource.url}" userId="${spring.datasource.username}"
+			password="${spring.datasource.password}">
+			<!--解决连接到别的数据库表问题-->
+			<property name="nullCatalogMeansCurrent" value="true" />
+		</jdbcConnection>
+		<javaModelGenerator targetPackage="com.zyx.mybookstore.Pojo"
+			targetProject="./src/main/java" />
+		<sqlMapGenerator targetPackage="com.zyx.mybookstore.Mapper"
+			targetProject="./src/main/resources" />
+		<javaClientGenerator targetPackage="com.zyx.mybookstore.Mapper"
+			targetProject="./src/main/java" type="XMLMAPPER" />
+		<table tableName="%"/>
+
+	</context>
+
+</generatorConfiguration>

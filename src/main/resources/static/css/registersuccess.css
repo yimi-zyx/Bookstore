@@ -1,0 +1,61 @@
+/********************title**********************/
+.registersuccess{
+    background-color: #FFFFFF;
+}
+.registersuccess-title-top{
+    text-align: center;
+}
+.registersuccess-icon-ok{
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #34bf19;
+    color: #fff;
+}
+#registersuccess-title-text{
+    color: #34cfe0;
+    font-style: italic;
+    font-size: 30px;
+    margin-left: 10px;
+}
+.registersuccess-title-bottom{
+    text-align: center;
+    font-size: 15px;
+}
+.registersucces-mian{
+    margin-top: 28px;
+    text-align: center;
+    width: 450px;
+    height: 220px;
+}
+.registersucces-mian-img{
+    float: left;
+}
+.registersucces-mian-img img{
+    width: 200px;
+    margin-right: 20px;
+    height: 200px;
+}
+.registersuccess-main-text{
+    float: left;
+    text-align: left;
+    line-height: 30px;
+    color: rgb(145, 141, 141);
+}
+#registersuccess-main-text-large{
+    font-size: 20px;
+    color: #000;
+}
+#registersuccess-main-btn{
+    background-color: rgb(95, 148, 216);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    position: relative;
+    top: 5px;
+    left: 65px;
+}

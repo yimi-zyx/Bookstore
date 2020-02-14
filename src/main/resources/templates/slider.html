@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>jQuery响应式图片卡片重叠旋转轮播切换特效</title>
+    <link rel="stylesheet" type="text/css" href="/css/slider.css" />
+
+</head>
+<body>
+    <div id="banner h-center">
+        <div id="carousel">
+            <img src="image/slideshow1.png" data-url="/bookdetail">
+            <img src="image/slideshow2.png" data-url="/bookdetail">
+            <img src="image/slideshow3.png" data-url="/bookdetail">
+            <img src="image/slideshow4.png" data-url="/bookdetail">
+            <img src="image/slideshow5.png" data-url="/bookdetail">
+            <img src="image/slideshow6.png" data-url="/bookdetail">
+        </div>
+    </div>
+    <script src="/js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/js/slider.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+            $(function() {
+                $('#carousel').carousel({
+                    curDisplay: 0, //默认索引
+                    autoPlay:false, //是否自动播放
+                    interval:3000 //间隔时间
+                });
+            });
+        </script>        
+</body>
+</html>

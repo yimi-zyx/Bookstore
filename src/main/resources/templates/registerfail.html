@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/registerfail.css">
+    <link rel="stylesheet" href="/css/head2.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div th:replace="head2::.header2"></div>
+<div class="registerfail">
+    <div class="registerfail-title-top">
+        <span class="glyphicon glyphicon-remove registerfail-icon-ok" ></span>
+        <span id="registerfail-title-text">Sorry，注册失败！</span>
+    </div>
+    <!--/*@thymesVar id="errorMsg" type=""*/-->
+    <!--th:text="${session.errorMsg}-->
+    <div class="registerfail-title-bottom">你购买的商品为书城官网正品！</div>
+    <div class="registersucces-mian clearfix h-center">
+        <div class="registersucces-mian-img">
+            <img src="/image/registerfailimg.jpg" alt="" srcset="">
+        </div>
+        <div class="registerfail-main-text v-center">
+            错误原因：<br>
+            <span id="registerfail-errormsg" >“12345qwe”太受欢迎，已被占用！</span><br>
+            <span id="registerfail-main-text-large">现在您可以：</span><br>
+            <a href="/register" id="registerfail-main-btn" class="h-center">重新注册</a>
+        </div>
+    </div>
+</div>
+<div th:replace="footer::.footer"></div>
+</body>
+</html>

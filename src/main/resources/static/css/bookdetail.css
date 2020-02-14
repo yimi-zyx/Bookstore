@@ -1,0 +1,602 @@
+/*body *{*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+/*}*/
+body{
+    margin: 0;
+    padding: 0;
+}
+/*******************title*********************/
+.booldetail-title{
+    height: 40px;
+    color: #666666;
+}
+#booldetail-title-first{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+    color: #666666;
+}
+.booldetail-title-interval{
+    margin-left: 3px;
+    margin-right: 3px;
+}
+/*****************content**********************/
+.bookdetail-content-left{
+    margin-left: 20px;
+    float: left;
+    width: 220px;
+    background-color: #E8E8E8;
+}
+.bookdetail-content-right{
+    float: left;
+    margin-left: 10px;
+    width: 1080px;
+    border: 1px solid #E8E8E8;
+}
+/*************************同类热销商品***************************/
+.bookdetail-thesamekind-title{
+    font-weight: bolder;
+    height: 28px;
+    margin: 1px;
+    text-align: center;
+    padding-top:5px ;
+    background-color: #fff;
+}
+.bookdetail-hotsale{
+    height: 28px;
+    margin: 1px;
+    padding-top:5px ;
+    background-color: #fff;
+}
+.bookdetail-insevendays{
+    padding: 1px;
+    width: 96px;
+    text-align: center;
+    float: left;
+    margin-left: 5px;
+}
+.bookdetail-insevendays:hover{
+    border-top: 2px solid #E20000;
+    border-bottom: none;
+    border-left: 1px solid #E8E8E8;
+    border-right: 1px solid #E8E8E8;
+    color: #EB0000;
+}
+.bookdetail-newbook{
+    width: 96px;
+    text-align: center;
+    padding: 1px;
+    float: left;
+    margin-left: 2px;
+}
+.bookdetail-newbook:hover{
+    border-top: 2px solid #E20000;
+    border-bottom: none;
+    border-left: 1px solid #E8E8E8;
+    border-right: 1px solid #E8E8E8;
+    color: #EB0000;
+}
+.bookdetail-thesamekind-img{
+    float: left;
+    width: 95px;
+    height: 60px;
+    position: relative;
+    left: -15px;
+}
+.bookdetail-thesamekind-img a>img{
+    width: 60px;
+    height: 60px;
+}
+.bookdetail-book-name{
+    float: left;
+    margin-left: -15px;
+}
+.bookdetail-thesamekind-book{
+    padding-top: 5px;
+    height: 70px;
+    width: 218px;
+    background-color: #fff;
+    margin: 1px;
+}
+.bookdetail-book-name{
+    margin-top: 5px;
+    width: 120px;
+}
+.bookdetail-book-name a{
+    color: #000;
+    text-decoration: none;
+}
+.bookdetail-book-name a:hover{
+    color: rgb(70, 78, 199);
+    text-decoration: underline;
+}
+.thesamekind-price{
+    margin-top: 15px;
+}
+.thesamekind-price-left{
+    color: #f00;
+}
+.thesamekind-price-right{
+    color: #B5B2B3;
+    font-size: 15px;
+    margin-left: 5px;
+}
+.bookdetail-thesamekind-ranking{
+    padding: 5px 8px;
+    width: 27px;
+    height: 33px;
+    background-image: url(../image/common-bg.png);
+    position: relative;
+    top: -20px;
+    left: 25px;
+    color: #fff;
+    background-position: -27px -30px;
+    /* background-position: -61px -30px; */
+}
+/*******************热门活动************************/
+.bookdetail-hotactivity-title{
+    font-weight: bolder;
+    font-size: 15px;
+    height: 28px;
+    margin: 1px;
+    margin-top: 3px;
+    text-align: center;
+    padding-top:5px ;
+    background-color: #fff;
+}
+.bookdetail-hotactivity-link{
+    color: #CB151A;
+    margin: 1px;
+    height: 30px;
+    padding-top: 6px;
+    font-size: 15px;
+    background-color: #fff;
+}
+.bookdetail-hotactivity-imglink{
+    height: 
+    90px;
+    text-align: center;
+    margin: 1px;
+    background-color: #fff;
+    padding-top: 5px;
+}
+.bookdetail-hotactivity-imglink img{
+    width: 200px;
+    height: 80px;
+}
+/*************该作者的其他作品*******************/
+.bookdetail-others-book{
+    height: 70px;
+    width: 218px;
+    background-color: #fff;
+    margin: 1px;
+    padding-top: 5px;
+}
+.bookdetail-others-book-img{
+    float: left;
+}
+.bookdetail-others-book-img img{
+    width: 60px;
+    height: 60px;
+}
+.bookdetail-othersbook-name{
+    float: left;
+    width: 150px;
+}
+.bookdetail-othersbook-name a{
+    float: left;
+    height: 40px;
+    overflow: hidden;
+}
+.bookdetail-othersbook a{
+    color: #000;
+    text-decoration: none;
+}
+.bookdetail-othersbook a:hover{
+    color: rgb(70, 78, 199);
+    text-decoration: underline;
+}
+/********************书详情细节********************/
+.bookdetail-content-bookmain{
+    background-color: #fff;
+    margin: 1px;
+}
+.bookdetail-bookmian-left{
+    float: left;
+    width: 360px;
+}
+.bookdetail-content-bookimg{
+    width: 360px;
+    height: 360px;
+    text-align: center;
+    margin: 10px;
+    border: 1px solid #E8E8E8;
+}
+.bookdetail-content-bookimg img{
+    margin-top: 30px;
+    width: 300px;
+    height: 300px;
+}
+.bookdetail-content-bookinfo{
+    float: left;
+    width: 680px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.bookname{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.bookinstruction{
+    line-height: 25px;
+    color: #FF0000;
+    font-size: 15px;
+}
+.booktips{
+    line-height: 25px;
+    color: #FF0000;
+    font-size: 15px;
+   padding-bottom: 10px;
+    border-bottom: 1px solid #E8E8E8;
+}
+.bookbrief-title{
+    color: #666666;
+}
+.line-row{
+    color: #666666;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.bookpricing{
+    color: #666666;
+    text-decoration: line-through;
+}
+.booksaleprice{
+    color: #E1383C;
+    font-size: 25px;
+    font-weight: bold;
+}
+.booktakeoff{
+    margin-left: 10px;
+    color: #E43973;
+    font-size: 13px;
+}
+.reducepricetip{
+    margin-left: 30px;
+}
+.reducepricetip a{
+    font-size: 13px;
+}
+.reducepricetip a:hover{
+    color: #f00;
+}
+.author a{
+    text-decoration: none;
+    color: #1D66B2;
+    margin-right: 5px;
+}
+.author a:hover{
+    color: #1D66B2;
+}
+.bookkind a:hover{
+    color: #f00;
+}
+.promotesale-activity{
+   color: #E4393D;
+   font-weight: bolder;
+}
+.text-large{
+    font-size: 14px;
+    color: #666666;
+    font-weight: bolder;
+}
+.quantity a{
+    text-decoration: none;
+    text-align: center;
+    padding: 0px 5px;
+    border:  1px  solid #D5D5D5;
+}
+.quantity{
+    border-top: 1px solid #E8E8E8;
+    padding-top: 10px;
+}
+.quantity a:hover{
+    text-decoration: none;
+    color: #f00;
+}
+.quantity input{
+   width: 35px;
+   text-align: center;
+   outline: none;
+   height: 25px;
+}
+.join-shopping-cart {
+    padding: 12px 30px;
+    background-color: #E03538;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bolder;
+    border-radius: 10px;
+    text-align: center;
+}
+.join-shopping-cart:hover {
+    
+    background-color: rgb(231, 25, 29);
+    color: #fff;
+    text-decoration: none;
+}
+.join-shopping-cart img{
+    width: 30px;
+    height: 30px;
+}
+.join-shopping-cart span{
+    height: 38px;
+    width: 5px;
+    font-size: 29px;
+    margin-left: 10px;
+    top: 4px;
+    position: relative;
+    border-right: 1px solid #E8E8E8;
+    margin-right: 14px;
+}
+.addcart{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.divider{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.batchbook{
+    text-align: center;
+    margin-top: 10px;
+}
+.batchbook button{
+    outline: none;
+    font-weight: bolder;
+    padding:3px 20px;
+    background-color: #FFEFDA;
+    border: 2px solid #F1843B;
+    border-radius: 5px;
+}
+.sharebook{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.sharebook button{
+    margin-left: 20px;
+    border: 1px solid #DDDDDD;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 3px 10px;
+}
+.sharebook button>img{
+    width: 20px;
+    height: 17px;
+    position: relative;
+    top: -1px;
+    right: 3px;
+}
+/* 最佳搭配 */
+.bestmatch{
+    border: 1px solid #E8E8E8;
+    width: 1080px;
+    height: 275px;
+    background-color: #fff;
+}
+.theme-title{
+    padding-top: 6px;
+    height: 30px;
+    border-bottom: 1px solid #CFCFCF;
+}
+.theme-title span{
+    padding: 6px 30px;
+    font-weight: bolder;
+    border: 1px solid #CFCFCF;
+    border-top: 2px solid #38AAEC;
+    border-bottom: none;
+}
+.bestmatch-content{
+    background-color: #F9F9F9;
+    margin-top: 10px;
+}
+.bestmatch-content-left{
+    float: left;
+    text-align: center;
+    width: 160px;
+    height: 220px;
+}
+.bestmatch-content-left img{
+    margin: 10px 15px;
+    width: 130px;
+    height: 135px;
+    background-color: #fff;
+    border: 1px solid #E8E8E8;
+}
+.bestmatch-content-left span{
+    margin-top: 10px;
+    font-weight: bolder;
+}
+.bestmatch-content-middle{
+    margin-left: 10px;
+    float: left;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 230px;
+    width: 640px;
+}
+.bestmatch-middle-parts{
+    width: 1920px;
+}
+.bestmatch-middle-part{
+    float: left;
+    width: 160px;
+    height: 210px;
+}
+.bestmatch-middle-part img{
+    margin: 10px 15px;
+    width: 130px;
+    height: 135px;
+    background-color: #fff;
+    border: 1px solid #E8E8E8;
+}
+.bestmatch-part-bookname{
+    margin-left: 15px;
+    color: #666666;
+    height: 20px;
+    overflow: hidden;
+}
+.bestmatch-part-null{
+    background-color: #FFFFFF;
+    margin: 1px;
+    padding: 5px;
+    text-align:center ;
+}
+.bestmatch-part-checkbox{
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.bestmatch-part-checkbox span{
+    color: #E4393D;
+    font-weight: bolder;
+    font-size: 16px;
+}
+.bestmatch-content-right{
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.buybestmach{
+    font-size: 16px;
+}
+.bestmatch-pricing{
+    margin-top: 15px;
+}
+.bestmatch-pricing span{
+    color: #AFAFAF;
+    text-decoration: line-through;
+}
+.bestmatch-bookpricing{
+    margin-top: 15px;
+}
+.bestmatch-bookpricing span{
+    font-size: 16px;
+    color: #E4393D;
+}
+.buybestmatch-btn{
+    margin-top: 20px;
+    color: #E4393D;
+}
+.buybestmatch-btn button{
+    background-color: #DD3235;
+    color: #fff;
+    font-size: 15px;
+    padding: 6px 20px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+.buybestmatch-btn span{
+    font-size: 20px;
+    font-weight: bolder;
+}
+/* 商品介绍 */
+.navigation-goodsdescription{
+    background-color: #fff;
+    width: 1080px;
+}
+.fastchannel{
+    height: 30px;
+}
+.fastchannel-module{
+    float: left;
+    margin-left: 15px;
+}
+.fastchannel-module a:hover .fastchannel-icon{ 
+    color: #DE3336;
+}
+.fastchannel-module a:hover .fastchannel-text{ 
+    text-decoration: none;
+    color: #DE3336;
+}
+.fastchannel-module a:hover { 
+    text-decoration: none;
+}
+.fastchannel-icon1{
+    font-size: 20px;
+    color: rgb(124, 121, 121);
+}
+.fastchannel-icon{
+    font-size: 20px;
+    color:#E6E6E6;
+}
+.fastchannel-text1{
+    font-weight: bolder;
+    color: #666666;
+}
+.fastchannel-text{
+    color: #666666;
+}
+.fastchannel-module a{
+    text-decoration: none;
+}
+/* 细节 */
+.details{
+    border: 1px solid #E6E6E6;
+}
+.details-content{
+    background-color: #F9F9F9;
+}
+.details-content{
+    background-color: #F9F9F9;
+}
+.list-txet{
+    list-style: none;
+}
+.list-txet li{
+    line-height: 30px;
+    width: 330px;
+    margin-left: 20px;
+    float: left;
+}
+/* 广告 */
+.detailsad{
+    text-align: center;
+    width: 1080px;
+    height: 150px;
+    border: 1px solid #E6E6E6;
+    border-top: none;
+}
+.detailsadimg{
+    float: left;
+    width: 330px;
+    margin-left: 20px;
+}
+.detailsadimg img{
+    width: 320px;
+    height: 150px;
+}
+.theme-content{
+    width: 1000px;
+    line-height: 25px;
+    margin-left: 30px;
+}
+.hide-more{
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: clip;
+    word-wrap: break-word;
+    white-space: normal !important;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+}
+.isdisplay{
+    display: block;
+    color: #005EAA;
+    font-weight: bolder;
+    font-size: 13px;
+}
+.bolck-left{
+    margin-left: 81px;
+}

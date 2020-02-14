@@ -1,0 +1,65 @@
+/********************title**********************/
+.registerfail{
+    background-color: #FFFFFF;
+}
+.registerfail-title-top{
+    text-align: center;
+}
+.registerfail-icon-ok{
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #ed2d15;
+    color: #fff;
+}
+#registerfail-title-text{
+    color: #3c3d40;
+    font-style: italic;
+    font-size: 30px;
+    margin-left: 10px;
+}
+.registerfail-title-bottom{
+    text-align: center;
+    font-size: 15px;
+}
+.registersucces-mian{
+    margin-top: 28px;
+    text-align: center;
+    width: 520px;
+    height: 220px;
+}
+.registersucces-mian-img{
+    float: left;
+}
+.registersucces-mian-img img{
+    width: 200px;
+    margin-right: 20px;
+    height: 200px;
+}
+.registerfail-main-text{
+    float: left;
+    text-align: left;
+    line-height: 30px;
+    color: rgb(145, 141, 141);
+}
+#registerfail-main-text-large{
+    font-size: 15px;
+}
+#registerfail-main-btn{
+    background-color: rgb(95, 148, 216);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    position: relative;
+    top: 5px;
+    left: 65px;
+}
+#registerfail-errormsg{
+    font-size: 19px;
+    color: #3c3738;
+
+}

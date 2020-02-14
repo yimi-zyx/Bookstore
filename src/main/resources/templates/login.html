@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet"href="/css/head2.css">
+    <link rel="stylesheet"href="/css/footer.css">
+    <script src="/Js/jquery-3.4.0.js"></script>
+</head>
+<body>
+    <div th:replace="head2::.header2"></div>
+    <div class="login">
+        <div class="login-content clearfix">
+            <div class="login-left">
+                <img src="/image/login_bg.jpg" alt="" >
+            </div>
+            <div class="login-right">
+                <div class="login-right-mian v-center">
+                    <div class="login-right-title"> 登录 </div>
+                    <div class="login-right-content h-center v-center">
+                        <div id="login-error">jxhdjcdgfhvbjhxcbvhj</div>
+                        <div class="login-row clearfix">
+                            <div class="login-style-left">账&emsp;号：</div>
+                            <div class="login-style-right">
+                                <span class="glyphicon glyphicon-user login-icon"></span>
+                                <input type="text" name="" id="login-user" placeholder="请输入用户名/手机号/邮箱号">
+                            </div>
+                        </div>
+                        <div class="login-row clearfix">
+                            <div class="login-style-left">密&emsp;码：</div>
+                            <div class="login-style-right">
+                                <span class="glyphicon glyphicon-lock login-icon"></span>
+                                <input type="password" name="" id="login-pwd" placeholder="请输入密码">
+                            </div>
+                        </div>
+                        <div class="login-row clearfix">
+                            <div class="login-style-left">验证码：</div>
+                            <div class="login-style-right">
+                                <span class="glyphicon glyphicon-picture login-icon"></span>
+                                <input type="text" name="" id="login-vcode" placeholder="请输入验证码">
+                                <img src="/verifycode.action" id="login-vcode-img" onclick="changeVerifyCode()" >
+                            </div>
+                        </div>
+                        <div class="login-row">
+                            <span id="login-atuo"><input type="checkbox" name="" id=""> 自动登录</span>
+                            <span id="login-forgetpwd"><a href="/forgetpwd">忘记密码？</a></span>
+                        </div>
+                        <div class="login-row">
+                            <button id="login-btn">登录</button>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <div th:replace="footer::.footer"></div>
+   <script src="/Js/login.js"></script> 
+</body>
+</html>

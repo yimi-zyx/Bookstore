@@ -1,0 +1,543 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.mycart{
+    margin:  0 auto;
+    width: 1000px;
+    /*display: none;*/
+}
+.contactservice{
+    margin:  0 auto;
+    margin-top: 10px;
+    width: 1000px;
+}
+.contactservice a{
+    float: right;
+    text-decoration: none;
+    color: #7E7E7E;
+    font-size: 20px;
+    cursor: pointer;
+    line-height: 35px;
+}
+.mycart-title{
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    /*background-color: #FFFFFF;*/
+}
+.mycart-title1{
+    height: 40px;
+    float: left;
+    width: 330px;
+    font-size: 17px;
+    position: relative;
+    border: 20px solid #EFEFEF;
+    text-align: center;
+    color: #959595;
+}
+.mycart-title1:after{
+    position: absolute;
+    content: "";
+    right: -50px;
+    top: -20px;
+    height: 0;
+    width: 0;
+    border-top: 20px solid transparent;
+    border-left: 30px solid #EFEFEF;
+    border-bottom: 20px solid transparent;
+}
+.mycart-title2{
+    height: 40px;
+    float: left;
+    width: 330px;
+    font-size: 17px;
+    left:5px;
+    position: relative;
+    border: 20px solid #EFEFEF;
+    border-left: 30px solid transparent;
+    text-align: center;
+    color: #959595;
+}
+.mycart-title2:after{
+    position: absolute;
+    content: "";
+    right: -50px;
+    top: -20px;
+    height: 0;
+    width: 0;
+    border-top: 20px solid transparent;
+    border-left: 30px solid #EFEFEF;
+    border-bottom: 20px solid transparent;
+}
+.mycart-title3{
+    height: 40px;
+    float: left;
+    width: 330px;
+    font-size: 17px;
+    border: 20px solid #EFEFEF;
+    position: relative;
+    left: 10px;
+    text-align: center;
+    color: #959595;
+    border-left: 30px solid transparent;
+}
+.color-change1{
+    color:#fff;
+    border: 20px solid #AB2E3E;
+}
+.color-change1:after{
+    border-left: 30px solid #AB2E3E;
+}
+.color-change2{
+    color:#fff;
+    border: 20px solid #AB2E3E;
+    border-left: 30px solid transparent;
+}
+.color-change2:after{
+    border-left: 30px solid #AB2E3E;
+}
+.color-change3{
+    color:#fff;
+    border: 20px solid #AB2E3E;
+    border-left: 30px solid transparent;
+}
+.color-change1 span{
+     color:#fff;
+ }
+.color-change2 span{
+    color:#fff;
+}
+.color-change3 span{
+    color:#fff;
+}
+.cart-icon{
+    margin-right: 4px;
+    color: #959595;
+}
+.mycart-table{
+    border-collapse: collapse;
+    width: 1000px;
+    border: 1px solid #DDDDDD;
+}
+.addbackground{
+    background-color: #F3F3F3;
+}
+.mycart-table tr>th{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    font-size: 15px;
+    margin: 3px;
+    color: #969696;
+}
+.mycart-table tr>td{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 15px;
+    color: #333333;
+}
+.cartbookid{
+    display: none;
+}
+.mycart-goodsdisplay{
+    height: 100px;
+}
+.goodsdisplay-left{
+    float: left;
+}
+.goodsdisplay-left img{
+    width: 120px;
+    height: 100px;
+}
+.goodsdisplay-right{
+    float:left;
+    text-align: left;
+    /*width: 680px;*/
+}
+.goodsname{
+    line-height: 20px;
+}
+.goodsbrief{
+    width: 350px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.goodsnumber a{
+    text-decoration: none;
+}
+.goodsnumdes{
+    padding: 1px 11px;
+    background-image: url(../image/des.png);
+    width: 22px;
+}
+.goodsnum{
+    width:37px;
+    height: 23px;
+    border: 1px solid #DDDDDD;
+    border-radius:3px;
+    text-align: center;
+}
+.goodsnuminc{
+    padding: 1px 11px;
+    background-image: url(../image/inc.png);
+    width: 22px;
+    margin-left: -3px;
+}
+.goodsoperate{
+    margin-top: 20px;
+    margin-left: 20px;
+    float: left;
+}
+.goodsoperate a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.goodsoperate a:hover{
+    text-decoration:underline;
+    color: #337AB7;
+}
+.goodscollect{
+    color: #AB2E3E;
+}
+.goodstotalnum{
+    line-height: 30px;
+    float: right;
+    margin-right: 20px;
+}
+.goodstotalnum span{
+    color: #CC0000;
+    font-weight: bolder;
+}
+.goodsjiage{
+    line-height: 30px;
+    float: right;
+}
+.goodstitledes{
+    margin-right: 150px;
+}
+.goodspricedes{
+    margin-right: 20px;
+}
+.totalprice{
+    text-align: right;
+}
+.totalprice-text{
+    margin-right: 120px;
+    color: #000000;
+    font-size: 15px;
+    font-weight: bolder;
+}
+.totalprice-price{
+    font-size: 20px;
+    color: #CC0000;
+    font-weight: bolder;
+    margin-right: 20px;
+}
+.cartoperate{
+    margin-top: 10px;
+}
+.continueshop{
+    float: left;
+    padding: 5px 10px;
+    border: 1px solid #CBCBCB;
+    font-size: 20px;
+    border-radius:5px;
+    background-color: #F5F5F5;
+}
+.continueshop:hover{
+    background-color: #F0F0F0;
+}
+.continueshop a{
+    text-decoration: none;
+    color: #7E7E7E;
+}
+.closeaccount{
+    float: right;
+}
+.closeaccount button{
+    padding: 7px 60px;
+    border:0px;
+    border-radius: 10px;
+    background-color: #E03538;
+    outline: none;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bolder;
+}
+.closeaccount button:hover{
+    background-color: #DA0120;
+}
+/******************************************************************************/
+.editinfo{
+    width: 1000px;
+    margin:  0 auto;
+    display: none;
+}
+.edit-tip{
+    font-size: 13px;
+}
+.edit-tip span{
+    color: #F92438;
+}
+.edit-title{
+    margin-top: 10px;
+    font-size: 18px;
+    color: #000;
+    font-weight: bolder;
+}
+.editor-background{
+    width: 1000px;
+    background-color:#F6F6F6 ;
+}
+.edit-detailinfo{
+    width: 750px;
+    margin: 0 auto;
+}
+.info-list{
+    line-height: 50px;
+}
+.info-list input{
+    height: 30px;
+}
+.info-list select{
+    width: 130px;
+}
+.details-address{
+    width: 670px;
+}
+.info-submit{
+    width: 750px;
+    text-align: center;
+}
+#info-submitbtn{
+    height: 35px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+/***************************************确认订单******************************************************/
+.confirmorder{
+    width:1000px;
+    margin: 0 auto;
+    display: none;
+}
+.goodsdisplay-right1{
+    float:left;
+    height: 30px;
+    width: 680px;
+}
+.goodsdisplay-rights{
+    width: 120px;
+    float: right;
+    text-align: right;
+    margin-right: 10px;
+}
+.confirmorder-title{
+    margin-top: 10px;
+    font-size: 18px;
+    color: #000;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+.confirmorder-content{
+    background-color:#F6F6F6 ;
+    padding-left: 100px;
+}
+.confirmaddress{
+    width: 800px;
+    background-color: #FFFFFF;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+.recipients{
+    font-size: 17px;
+}
+.direction{
+    font-size: 16px;
+    line-height: 30px;
+}
+.confirmorder-icon{
+    font-size: 20px;
+    color: #00aeff;
+}
+.direction a{
+    margin-left: 10px;
+    font-size: 14px;
+}
+.tips{
+    color: #ffa60e;
+}
+.elseinfo{
+    padding-top: 10px;
+    margin-top: 20px;
+    width: 800px;
+    background-color: #FFFFFF;
+}
+.distributionway{
+    margin-left: 20px;
+    font-size: 15px;
+    margin-top: 20px;
+}
+.light{
+    margin-left: 20px;
+    color: #9d9d9d;
+}
+.kuaidi{
+    margin-left: 510px;
+    margin-right: 20px;
+}
+.orderremark{
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 30px;
+    padding-bottom: 10px;
+ }
+.orderremark input{
+    height: 25px;
+    margin-left: 20px;
+    width: 660px;
+    border: none;
+    background-color: #F0F0F0;
+    outline: none;
+}
+.payw{
+    margin-left: 20px;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.wright{
+    margin-left: 620px;
+}
+.creditsexchange{
+    width: 800px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: #ff7e14;
+    background-color: #FFFFFF;
+}
+.creditsexchange input{
+    display: inline;
+    margin-left: 570px;
+}
+.creditsexchange img{
+    width: 20px;
+    height: 20px;
+}
+.anonym{
+    margin-top: 10px;
+    margin-left: 20px;
+    padding-bottom: 10px;
+}
+.submitinfo{
+    margin-top: 20px;
+    padding-bottom: 20px;
+    width: 800px;
+}
+#submitinfobtn{
+    float: right;
+    padding: 7px 30px;
+    border-radius: 15px;
+    border: 0;
+    outline: none;
+    background: -webkit-linear-gradient(left, #ffb31c, #e6880e);
+    color: #FFFFFF;
+}
+#submitinfobtn:hover{
+    background: -webkit-linear-gradient(left, #ffa60e, #ed2d15);
+ }
+.goodsn{
+    padding-top: 10px;
+    float: right;
+    margin-right: 20px;
+    color: #9d9d9d;
+}
+.totalprice{
+    font-size: 17px;
+    margin-right: 20px;
+    float: right;
+}
+.large{
+    font-size: 23px;
+    color: #ff7e14;
+}
+.small{
+    font-weight: bolder;
+    font-size: 15px;
+    color: #ff7e14;
+}
+/**************************************提交订单******************************************/
+.successcommit{
+    height: 300px;
+    width: 1000px;
+    border: 1px solid #A6D390;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: #F8FFEC;
+    display: none;
+}
+.successcommit-content{
+    width: 900px;
+    height: 220px;
+    margin: 0 auto;
+}
+.successcommit-left{
+    float: left;
+}
+.successcommit-tip{
+    margin-bottom: 10px;
+    padding-top: 10px;
+    margin-left: 45px;
+}
+.successcommit-code{
+    margin-top: 10px;
+}
+.successcommit-code img{
+    width: 180px;
+    height: 180px;
+}
+.successcommit-middle{
+    float: left;
+    margin-left: 20px;
+}
+.successcommit-right{
+    float: left;
+    margin-left: 20px;
+    width: 600px;
+}
+.successcommit-title{
+    font-size: 25px;
+    font-weight: bolder;
+    color: #46810C;
+}
+.successcommit-text{
+    line-height: 30px;
+    font-size: 17px;
+    color: #000000;
+}
+.bolder{
+    font-weight: bolder;
+    font-size: 19px;
+}
+.successcommit-link{
+    margin-top: 10px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.successcommit-link a{
+    color: #1974D1;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.successcommit-smalltext{
+    font-size: 13px;
+    line-height: 25px;
+}
+.successcommit-smalltext span{
+    color: #C6000B;
+}

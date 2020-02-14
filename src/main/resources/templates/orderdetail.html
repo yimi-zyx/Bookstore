@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>订单详情</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/orderdetail.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/head.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <script src="/Js/jquery-3.4.0.js"></script>
+</head>
+<body>
+<!--头部-->
+    <div th:replace="head::.top"></div>
+    <div class="top-footer"></div>
+    <div class="orderdetail">
+        <div class="orderdetail-content">
+            <div class="orderdetail-title">订单详情</div>
+            <div class="orderdetail-linetext">订&ensp;单&ensp;号：<span>19071414805042</span></div>
+            <div class="orderdetail-linetext">订单时间：<span>2019-07-14 14:43:55</span></div>
+            <div class="orderdetail-linetext">订单状态：<span>已提交</span><a class="link1">订单状态说明</a></div>
+            <div class="orderdetail-linetext">优惠总额：<span>-￥2.80</span></div>
+            <div class="orderdetail-linetext">订单总额：<span class="color-red">￥17.20</span></div>
+            <div class="orderdetail-linetext">支付状态：<span>未支付</span><button>现在支付</button></div>
+            <div class="orderdetail-linetext">物流信息：<a class="color-red link2">查看详细>></a></div>
+        </div>
+    </div>
+<!--底部-->
+    <div th:replace="footer::.footer"></div>
+<script src="/Js/head.js"></script>
+</body>
+</html>

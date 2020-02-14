@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/paging.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet"href="/css/head.css">
+    <link rel="stylesheet"href="/css/footer.css">
+    <script src="/Js/jquery-3.4.0.js"></script>
+    <title>Title</title>
+    <style>
+        .position{
+            margin: 5px 67px;
+            font-weight: bolder;
+        }
+        .position span{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div th:replace="head::.top"></div>
+    <div class="top-footer"></div>
+    <div class="position">共有<span th:text="${session.books.size()}">12</span>条结果</div>
+    <div class="paging-content clearfix" >
+        <div class="paging-content-detail" th:each="book:${session.books}">
+            <a href="#" th:href="@{'/bookdetail?bookid='+${book.bookid}}" title="时光背影" th:attr="title=${book.bookname}">
+                <img  src="/image/1201658694_0_1_350x350.jpg" alt="" th:attr="src=${book.bookimg}">
+                <div class="paging-bookname" th:text="${book.bookname}">时光背影</div>
+            </a>
+            <div class="paging-price ">
+                <span class="paging-price-left" th:text="'￥'+${book.booknewprice}">￥46.00</span>
+                <s class="paging-price-right"th:text="'￥'+${book.bookoldprice}">￥59.00</s>
+            </div>
+        </div>
+    </div>
+
+    <div th:replace="footer::.footer"></div>
+</body>
+</html>

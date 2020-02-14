@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.faovrite{
+    margin: 0 auto;
+    width: 900px;
+    background-color: #F6F6F6;
+    padding: 10px;
+}
+.faovrite-title{
+    padding:10px;
+    font-size: 16px;
+    font-weight: bolder;
+    color: #8f8f8f;
+}
+.faovrite-books{
+    padding: 10px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    width: 860px;
+    margin: 0 auto;
+}
+.faovrite-booksimg{
+    float: left;
+}
+.faovrite-booksimg img{
+    width: 120px;
+    height: 95px;
+}
+.faovrite-bookinfo{
+    float: left;
+    width: 200px;
+}
+.faovrite-bookname{
+    font-weight: bolder;
+    padding: 5px;
+}
+.faovrite-bookauthor{
+    padding: 5px;
+    color: #999999;
+}
+.faovrite-bookprice{
+    padding: 5px;
+}
+.bookprice-left{
+    font-size: 16px;
+    color: #FF0000;
+}
+.bookprice-right{
+    font-size: 14px;
+    color: #999999;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+.faovrite-bookbrief{
+    height: 95px;
+    float: left;
+    width: 520px;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/head.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/jquery-3.4.0.js"></script>
+    <script src="/js/jquery-ui.js"></script>
+    <title>购书商城</title>   
+</head>
+<body>
+<div class="top">
+    <div class="header">
+        <!-- 头部 -->
+        <div class="header-content h-center clearfix">
+            <div class="header-img">
+                <img src="image/logo.png" alt="">
+            </div>
+            <div  class="header-search v-center">
+                    <input type="text" name="search" id="header-search-input" placeholder="搜索从这里开始...">
+                    <span  id="header-search-btn">搜索</span>
+            </div>
+            <div class="header-link v-center" th:if="${session.user} eq null">
+                <a id="header-register" href="/register">注册</a>
+                <a id="header-login" href="/login" >登录</a>
+            </div>
+            <!--"-->
+            <div class="header-link v-center" th:if="${session.user} ne null">
+                <img src="image/defaultheadportrait.png" alt="">
+                <a id="header-user" th:text="${session.user.username}">123</a>
+                <a id="header-searchcart" href="/mycart">我的购物车</a>
+            </div>
+        </div>
+    </div>
+    <div class="operate">
+        <div class="triangle"></div>
+        <div class="rentangle">
+            <div class="rentangle-line1"><a href="/personalcenter">个人中心</a></div>
+            <div class="rentangle-line2"><a href="/logout.action">退出</a></div>
+        </div>
+    </div>
+    <!-- 导航 -->
+    <div class="navigation">
+        <div class="navigation-content">
+            <ul class="clearfix navigationul">
+                <li th:each="outtype : ${session.outtypes}">
+                    <a href="/paging" th:href="@{/paging(outtypenum=${outtype.outtypenum})}" th:text="${outtype.outtypename}">文学小说</a>
+                </li>
+                <li>
+                    <a href="/allclass">全部类型</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="top-footer"></div>
+<!--<script src="Js/head.js"></script>-->
+</body>
+</html>

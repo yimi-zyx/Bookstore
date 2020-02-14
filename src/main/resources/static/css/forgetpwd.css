@@ -1,0 +1,214 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.forgetpwd{
+    margin: 0 auto;
+    width: 1000px;
+}
+.forgetpwd-content{
+    margin-top: 30px;
+    height: 350px;
+    margin-bottom: 30px;
+    border: 1px solid #ECECEC;
+}
+.forgetpwd-title{
+    padding: 10px 0px;
+    width: 1000px;
+    text-align: center;
+    color: rgb(17, 118, 233);
+    font-size: 20px;
+    font-weight: bolder;
+    background: -webkit-linear-gradient(top,white,lightblue);
+}
+.forgetpwd-plan{
+   margin-top: 40px;
+   margin-left: 40px;
+}
+.forgetpwd-plan-single{
+    float: left;
+    width: 230px;
+    height: 5px;
+    background-color: #999999;
+    text-align: center;
+    
+}
+.forgetpwd-plan-display{
+    position: relative;
+    top: -15px;
+    line-height: 30px;
+    color: #f0f;
+}
+.forgetpwd-ordinalnumeral{
+    padding: 8px  15px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+    background-color: #999999;
+}
+.forgetpwd-description{
+    color: #646464;
+    font-size: 15px;
+}
+.plan-activity {
+    background-color: #5eaeef;
+}
+.plan-activity .forgetpwd-ordinalnumeral{
+    background-color: #5eaeef;
+}
+.plan-activity .forgetpwd-description{
+    color: #5eaeef;
+}
+/**************************************************************/
+.forgetpwd-blankinfo{
+    width: 430px;
+    height: 150px;
+    margin: 0 auto;
+    margin-top: 80px;
+    /*display: none;*/
+}
+.forgetpwd-inputinfo{
+    /* text-align: center; */
+    margin-top: 10px;
+}
+.forgetpwd-inputinfo input{
+    height: 25px;
+    margin-left: 10px;
+}
+#forgetpwd-account{
+    width: 240px;
+}
+#forgetpwd-vcode{
+    width: 120px;
+}
+.forgetpwd-inputinfo img{
+    position: relative;
+    top: -4px;
+    margin-left: 10px;
+    width: 105px;
+    height: 40px;
+}
+.forgetpwd-next{
+    margin-top: 20px;
+    margin-left: -30px;
+    position: relative;
+    left: 30%;
+}
+.forgetpwd-next button{
+    text-align: center;
+}
+.forgetpwd-inputinfo a{
+    text-decoration: none;
+    color: #1b8eec;
+    font-size: 13px;
+}
+.forgetpwd-inputinfo a:hover{
+    text-decoration: underline;
+    color: #0668b8;
+}
+
+#forgetpwd-next-btn:hover{
+    background-color: #2685d3;
+}
+/*****************************身份验证*******************************/
+.forgetpwd-verifyidentity{
+    margin: 0 auto;
+    width: 430px;
+    margin-top: 80px;
+    height: 150px;
+}
+#forgetpwd-verifytext{
+    margin-left: 90px;
+    font-size: 15px;
+    color: #999999;
+}
+.forgetpwd-verifytext a{
+    font-size: 14px;
+    margin-left: 5px;
+}
+#forgetpwd-verifyway-phone{
+    width: 240px;
+}
+#forgetpwd-verifyway-email{
+    width: 240px;
+}
+#forgetpwd-vcode2{
+    width: 150px;
+}
+#forgetpwd-getvcode-btn{
+    padding: 4px;
+    margin-left: 5px;
+}
+/******************************设置密码*********************************/
+.forgetpwd-settingnewpwd{
+    width: 430px;
+    height: 150px;
+    margin: 0 auto;
+    margin-top: 80px;
+    /*display: none;*/
+}
+#forgetpwd-inputpwd1{
+    width: 210px;
+}
+#forgetpwd-inputpwd2{
+    width: 210px;
+}
+.forgetpwd-btn{
+    font-size: 16px;
+    color: #fff;
+    font-weight: bolder;
+    padding: 8px 60px;
+    background-color: #4a9cde;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+#forgetpwd-ok-btn:hover{
+    background-color: #2685d3;
+}
+.forgetpwd-error{
+    font-size: 14px;
+    color: #f00;
+}
+#forgetpwd-tipsinfo{
+    color: #999999;
+    margin-top: 10px;
+    margin-left: 96px;
+    font-size: 14px;
+}
+/******************************完成**************************************/
+.forgetpwd-finish{
+    width: 350px;
+    height: 150px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.forgetpwd-finish-icon{
+    color: #fff;
+    padding: 10px;
+    font-size: 37px;
+    border-radius: 30px;
+    background-color: #27d627;
+}
+.forgetpwd-finish-text{
+    color: #0893d8;
+    font-size: 25px;
+    font-style: italic;
+    margin-left: 10px;
+}
+.forgetpwd-finish-link{
+    position: relative;
+    top: 15px;
+    margin-left: 40px;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #333333;
+}
+.forgetpwd-finish-link a{
+    color: #47afe2;
+}
+/***********************************/
+.hide{
+    display: none;
+}

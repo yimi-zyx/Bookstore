@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/allclass.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet"href="/css/head.css">
+    <link rel="stylesheet"href="/css/footer.css">
+    <script src="/Js/jquery-3.4.0.js"></script>
+    <title>Title</title>
+</head>
+<body>
+    <div th:replace="head::.top"></div>
+    <div class="top-footer"></div>
+    <div class="allclass">
+        <div class="allclass-type clearfix" th:each="alltype:${session.alltypes}">
+            <div class="allclass-title" th:text="${alltype.classname}">全部</div>
+            <div class="allclass-content">
+                <div class="allclass-text" th:each="type:${alltype.gettList()}">
+                    <a th:href="@{'/allclass.action?text='+${type}}" th:text="${type}">推理悬疑</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div th:replace="footer::.footer"></div>
+<!--<script>-->
+    <!--$(".allclass-content span").click(function () {-->
+        <!--var text=$(this).html();-->
+        <!--$-->
+    <!--})-->
+<!--</script>-->
+</body>
+</html>

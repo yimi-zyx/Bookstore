@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/registersuccess.css">
+    <link rel="stylesheet" href="/css/head2.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div th:replace="head2::.header2"></div>
+    <div class="registersuccess">
+        <div class="registersuccess-title-top">
+            <span class="glyphicon glyphicon-ok registersuccess-icon-ok" ></span>
+            <span id="registersuccess-title-text">恭喜您，注册成功！</span>
+        </div>
+        <div class="registersuccess-title-bottom">你购买的商品为书城官网正品！</div>
+        <div class="registersucces-mian clearfix h-center">
+            <div class="registersucces-mian-img">
+                <img src="/image/registersucessimg.jpg" alt="" srcset="">
+            </div>
+            <div class="registersuccess-main-text v-center">
+                您获得了1个月的书城 VIP特权</br>
+                到期时间：2019-07-12日</br>
+                <span id="registersuccess-main-text-large">现在您可以：</span><br>
+                您可以享受在线阅读会员尊享书籍</br>
+                <a href="/login" id="registersuccess-main-btn" class="h-center">立即登录</a>
+            </div>
+        </div>
+    </div>
+    <div th:replace="footer::.footer"></div>
+</body>
+</html>
